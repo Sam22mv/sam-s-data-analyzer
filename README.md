@@ -1,6 +1,6 @@
 # Sam's Data Analyzer
 
-Sam's Data Analyzer (formerly NumeriX) is a fully interactive web-based tool for exploring, cleaning, visualizing, and preparing datasets for analysis and machine learning — all without writing code.
+Sam's Data Analyzer is a fully interactive web-based tool for exploring, cleaning, visualizing, and preparing datasets for analysis and machine learning — all without writing code.
 
 >  Live App: [Open on Streamlit Cloud](https://sam-s-data-analyzer-4ras42xdgv4bjkjhzrtbm4.streamlit.app/)  
 
