@@ -4,7 +4,7 @@ Sam's Data Analyzer (formerly NumeriX) is a fully interactive web-based tool for
 
 >  Live App: [Open on Streamlit Cloud](https://sam-s-data-analyzer-4ras42xdgv4bjkjhzrtbm4.streamlit.app/)  
 >  GitHub Repo: [github.com/Sam22mv/sam-s-data-analyzer](https://github.com/Sam22mv/sam-s-data-analyzer)
->  Video Demo: 
+>  Video Demo: [open google drive link]  
 ---
 
 ## Features
