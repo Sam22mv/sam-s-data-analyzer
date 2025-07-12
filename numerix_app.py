@@ -147,7 +147,7 @@ if uploaded_file:
     #-----------------------------------------------------Summary Log of Changes
     if st.session_state.change_log:
         st.markdown("---")
-        st.subheader("📝 Dataset Modification Summary")
+        st.subheader("Dataset Modification Summary")
         for entry in st.session_state.change_log:
             st.markdown(f"- {entry}")
 
