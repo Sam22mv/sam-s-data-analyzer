@@ -46,4 +46,41 @@ Sam's Data Analyzer is a fully interactive web-based tool for exploring, cleanin
 ---
 
 ## Folder Structure
+numerix_app.py # Main Streamlit app
+├── insights.py # Insights (nulls, stats, correlations)
+├── visualizer.py # Chart generation (Plotly)
+├── report_generator.py # PDF report builder
+├── phase2_cleaning.py # Drop/fill missing/duplicate rows
+├── phase2_dtypes.py # Data type converter
+├── phase2_outliers.py # Box plot + IQR outlier control
+├── phase2_explore.py # Univariate and bivariate EDA
+├── phase3_scaling.py # Feature scaling
+├── phase3_encoding.py # Categorical encoding
+├── phase3_skew_transform.py # Skewness transformation
+└── requirements.txt # Required libraries
 
+---
+
+## Tech Stack
+
+| Library         | Use Case                        |
+|----------------|----------------------------------|
+| Streamlit       | Web UI for interactive app       |
+| Pandas          | Data manipulation and EDA        |
+| NumPy           | Numerical operations             |
+| Plotly          | Interactive charts               |
+| Seaborn         | Correlation heatmaps             |
+| Matplotlib      | Auxiliary visualizations         |
+| FPDF            | PDF export of results            |
+| Scikit-learn    | Preprocessing (scaling, encoding)|
+| SciPy           | Yeo-Johnson transformation       |
+
+---
+
+## Run Locally
+
+```bash
+git clone https://github.com/Sam22mv/sam-s-data-analyzer.git
+cd sam-s-data-analyzer
+pip install -r requirements.txt
+streamlit run numerix_app.py
