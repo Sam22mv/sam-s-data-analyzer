@@ -5,8 +5,6 @@ import plotly.io as pio
 import os
 import time
 
-pio.kaleido.scope.default_format = "png"
-
 class PDFReport(FPDF):
     def header(self):
         if self.page_no() == 1:
