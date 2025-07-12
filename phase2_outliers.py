@@ -49,20 +49,25 @@ Outliers Detected = {outlier_rows.shape[0]}
     if key not in st.session_state:
         st.session_state[key] = outlier_indices  # default: all selected
 
+    # 🛡 Ensure default values are valid
+    valid_defaults = [i for i in st.session_state[key] if i in outlier_indices]
+
     # Buttons to update session state
     col1, col2 = st.columns(2)
     with col1:
         if st.button("Select All Outliers"):
             st.session_state[key] = outlier_indices
+            valid_defaults = outlier_indices
     with col2:
         if st.button("❌ Clear All Selection"):
             st.session_state[key] = []
+            valid_defaults = []
 
     # --- Step 5: Multiselect UI ---
     selected_to_keep = st.multiselect(
         "Choose rows to keep (based on index):",
         options=outlier_indices,
-        default=st.session_state[key],
+        default=valid_defaults,
         key=f"multiselect_{col}"
     )
 
@@ -79,7 +84,7 @@ Outliers Detected = {outlier_rows.shape[0]}
         st.markdown(f"**New shape:** `{after} rows × {df.shape[1]} columns`")
 
         # Log the change
-        if removed > 0:
+        if removed > 0 and "change_log" in st.session_state:
             st.session_state.change_log.append(f"Removed {removed} outliers from '{col}'")
 
         # Clear state
