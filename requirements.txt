@@ -2,4 +2,8 @@ streamlit
 pandas
 numpy
 plotly
+matplotlib
+seaborn
+scikit-learn
+scipy
 fpdf
