@@ -6,7 +6,7 @@ Sam's Data Analyzer is a fully interactive web-based tool for exploring, cleanin
 
 >  GitHub Repo: [github.com/Sam22mv/sam-s-data-analyzer](https://github.com/Sam22mv/sam-s-data-analyzer)
 
->  Video Demo: [open google drive link]  
+>  Video Demo: [open google drive link](https://drive.google.com/file/d/1N5uJsJUbfW8K_p88yYBvqJbwJ5KILWBR/view?usp=sharing)  
 ---
 
 ## Features
